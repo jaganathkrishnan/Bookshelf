@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <h1>Bookshelf</h1>
+        <form id="bookform">
+            <div class="form-group">
+                <label for="author">Name of author:</label>
+                <input type="text" id="author" name="author" required>
+            </div>
+            <div class="form-group">
+                <label for="title">Title of book:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="pagesTotal">Total number of pages:</label>
+                <input type="number" id="pagesTotal" name="pagesTotal" required>
+            </div>
+            <div class="form-group">
+                <label for="pagesRead">Total pages read:</label>
+                <input type="number" id="pagesRead" name="pagesRead" required>
+            </div> 
+            <div class="form-group">
+                <label for="read">Read:</label>
+                <input type="checkbox" id="read" name="read">
+            </div>
+            <div class="action">
+                <button type="button" id="addBook">Add book</button>
+                <button type="button" id="cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <div class="Bookshelf">
+        <div class="bookshelfcontainer" id="bookshelfcontainer"></div>
+    </div>
+</body>
+</html>
